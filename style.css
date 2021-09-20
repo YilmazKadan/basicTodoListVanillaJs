@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #74ebd5;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#ACB6E5), to(#74ebd5));
+  background: linear-gradient(to right, #ACB6E5, #74ebd5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.container {
+  width: 350px;
+  margin: 0px auto;
+  max-height: 100%;
+}
+
+.todo {
+  max-height: 400px;
+  overflow: auto;
+  padding: 15px;
+  background-color: white;
+  border-radius: 14px;
+}
+
+.todo .todo-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.todo .todo-header .todo-input {
+  height: 40px;
+  outline: none;
+  padding: 0px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid #74ebd5;
+}
+
+.todo .todo-header input[type='button'] {
+  width: 90px;
+  cursor: pointer;
+  color: white;
+  background-color: #acb6e5;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.todo .todo-header input[type='button']:hover {
+  background-color: #181824;
+}
+
+.todo .todo-main {
+  margin-top: 20px;
+}
+
+.todo .todo-main .todo-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo .todo-main .todo-element p {
+  font-size: 18px;
+  width: 100%;
+}
+
+.todo .todo-main .todo-element input[type="button"] {
+  min-width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-color: #ed2c49;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

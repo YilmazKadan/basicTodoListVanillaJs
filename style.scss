@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.container{
+    width: 350px;
+    margin:0px auto;
+    max-height: 100%;
+}
+.todo{
+    max-height: 400px;
+    overflow: auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 14px;
+    .todo-header{
+        display: flex;
+        justify-content: space-between;
+        .todo-input{
+            height: 40px;
+            outline: none;
+            padding: 0px 10px;
+            font-size:14px;
+            font-weight: bold;
+            border-radius: 10px;
+            border:1px solid #74ebd5;
+        }
+        input[type='button']{
+            width: 90px;
+            cursor: pointer;
+            color:white;
+            background-color: #acb6e5;
+            outline: none;
+            border:none;
+            border-radius: 10px;
+            &:hover{
+                background-color: #181824;
+            }
+        }
+    }
+    .todo-main{
+        margin-top: 20px;
+        .todo-element{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            p{
+                font-size: 18px;
+                width: 100%;
+            }
+            input[type="button"]{
+                min-width: 50px;
+                height: 50px;
+                margin-left: 10px;
+                background-color: #ed2c49;
+                color:white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+    }
+}
